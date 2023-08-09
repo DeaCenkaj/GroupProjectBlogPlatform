@@ -60,7 +60,7 @@
                         <div class="profile-header-content">
                             <!-- BEGIN profile-header-img -->
                             <div class="profile-header-img">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                                <img src="https://source.unsplash.com/random/900×700/?people" alt="">
                             </div>
                             <!-- END profile-header-img -->
                             <!-- BEGIN profile-header-info -->
@@ -105,7 +105,7 @@
 
                                     <div class="timeline-body">
                                         <div class="timeline-header">
-                                            <span class="userimage"><img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt=""></span>
+                                            <span class="userimage"><img src="https://source.unsplash.com/random/900×700/?people" alt=""></span>
                                             <span class="username"><c:out value="${user.firstName}"/> <c:out value="${user.lastName}"/></span>
                                         </div>
                                         <div class="timeline-content">

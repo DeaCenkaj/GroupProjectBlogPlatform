@@ -25,62 +25,8 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}css/css/flaticon.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}css/css/icomoon.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}css/css/viewPost.css">
-    <style>
-        /* Use the background photo */
-
-    </style>
 </head>
 <body>
-
-<%--
-<div class="view">
-    <div class="mask rgba-gradient align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center mb-4">View Post</h1>
-                    <div class="post-content">
-                        <div class="container">
-                            <div class="film-details">
-                                <h1 class="text-dark"><a href="/dashboard">Dashboard</a></h1>
-
-                                <div class="post-details">
-                                    <h2 class="text-dark">Post Details</h2>
-                                    <table class="table">
-                                        <tbody class="text-dark">
-                                        <tr>
-                                            <td>Title:</td>
-                                            <td><c:out value="${post.title}"></c:out></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Body:</td>
-                                            <td><c:out value="${post.body}"></c:out></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Type:</td>
-                                            <td><c:out value="${post.type}"></c:out></td>
-                                        </tr>
-
-                                        </tbody>
-                                    </table>
-                                    <h5><a href="/post/${post.id}/comments">See Comments</a></h5>
-                                    <c:if test="${post.lead.id eq user}">
-                                        <div class="btn-group">
-                                            <a class="btn-primary" href="/post/edit/${post.id}">Edit Post</a>
-                                            <a class="btn-secondary" href="/post/delete/${post.id}">Delete Post</a>
-                                        </div>
-                                    </c:if>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
---%>
 <section style="background-color: #eee;">
     <div class="container my-5 py-5">
         <div class="row d-flex justify-content-center">
@@ -89,7 +35,7 @@
                     <div class="card-body">
                         <div class="d-flex flex-start align-items-center">
                             <img class="rounded-circle shadow-1-strong me-3"
-                                 src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar" width="60"
+                                 src="https://source.unsplash.com/random/900×700/?people" alt="avatar" width="60"
                                  height="60" />
                             <div>
                                 <h6 class="fw-bold text-primary mb-1"><c:out value="${user.firstName}"/> <c:out value="${user.lastName}"/></h6>
@@ -106,7 +52,7 @@
                     <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
                         <div class="d-flex flex-start w-100">
                             <img class="rounded-circle shadow-1-strong me-3"
-                                 src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar" width="40"
+                                 src="https://source.unsplash.com/random/900×700/?people" alt="avatar" width="40"
                                  height="40" />
                             <form:form action="/post/${post.id}/comments" method="post" modelAttribute="comment">
                                 <div class="form-group">
